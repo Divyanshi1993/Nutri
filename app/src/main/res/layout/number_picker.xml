@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/spinnner2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/numPick_widhth"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingBottom="@dimen/_20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/_30dp"
+                android:text="-" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Weight"
+                android:textSize="@dimen/_18sp" />
+
+            <Com.knoventive.nutri.Util.CustomTextView_img
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:text="i"
+                android:textSize="@dimen/_30dp" />
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/numberPicker_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/numPick_height"
+                android:layout_weight="1"
+                app:np_dividerThickness="@dimen/_0dp"
+                app:np_height="@dimen/num_height"
+                app:np_max="95"
+                app:np_min="50"
+                app:np_order="ascending"
+                app:np_selectedTextColor="@color/text_color"
+                app:np_selectedTextSize="@dimen/_50sp"
+                app:np_textColor="@color/text_color"
+                app:np_textSize="@dimen/_30sp"
+                app:np_value="3"
+                app:np_wheelItemCount="5"
+                app:np_width="60dp"
+                app:np_wrapSelectorWheel="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/numPick_widhth"
+            android:layout_height="wrap_content"
+            android:background="@color/spinnner2"
+            android:gravity="center"
+            android:paddingTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/_30dp"
+                android:text="-" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calories"
+                android:textSize="@dimen/_18sp" />
+
+            <Com.knoventive.nutri.Util.CustomTextView_img
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:text="e"
+                android:textSize="@dimen/_30dp" />
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/numberPicker_Calorie"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/numPick_height"
+                android:layout_weight="1"
+                app:np_dividerThickness="@dimen/_0dp"
+                app:np_height="@dimen/num_height"
+                app:np_max="5"
+                app:np_min="1"
+                app:np_order="ascending"
+                app:np_selectedTextColor="@color/text_color"
+                app:np_selectedTextSize="@dimen/_50sp"
+                app:np_textColor="@color/text_color"
+                app:np_textSize="@dimen/_30sp"
+                app:np_value="1"
+                app:np_wheelItemCount="5"
+                app:np_width="60dp"
+                app:np_wrapSelectorWheel="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color"
+        android:text="@string/done"
+        android:textSize="@dimen/_18sp"
+        android:elevation="2dp"
+        android:padding="@dimen/calBtnPad"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary" />
+</LinearLayout>

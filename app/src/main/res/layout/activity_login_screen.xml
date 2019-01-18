@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:orientation="vertical"
+    tools:context="Com.knoventive.nutri.Activity.LoginScreen">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/_70dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <include layout="@layout/headere_view" />
+
+            <Com.knoventive.nutri.Util.Custom_Edittext
+                android:id="@+id/activation_password"
+                android:layout_marginBottom="@dimen/_15dp"
+                android:layout_marginLeft="@dimen/activation_margin"
+                android:layout_marginRight="@dimen/activation_margin"
+                app:cardCornerRadius="@dimen/_20dp"
+                android:layout_marginTop="@dimen/_15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_corner_edittext"
+                android:hint="@string/act_pas"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:paddingBottom="@dimen/_15dp"
+                android:paddingLeft="@dimen/_40dp"
+                android:paddingRight="@dimen/_40dp"
+                android:paddingTop="@dimen/_15dp"
+                android:textAllCaps="false"
+                android:textColor="@color/hint"
+                android:imeOptions="actionGo"
+                android:textSize="@dimen/_18sp" />
+        <Com.knoventive.nutri.Util.CustomTextView_Air_Semibold
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/login_label2"
+            android:textColor="@color/hint" />
+
+        <Com.knoventive.nutri.Util.CustomTextView_Air_Semibold
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sp"
+            android:gravity="center"
+            android:text="@string/login_label1"
+            android:textColor="@color/hint" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:elevation="1dp"
+        android:text="@string/Get_Started"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+</android.support.v7.widget.LinearLayoutCompat>

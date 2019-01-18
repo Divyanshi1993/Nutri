@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/cal_inc_card_margin"
+        android:layout_marginRight="@dimen/cal_inc_card_margin"
+        app:cardCornerRadius="@dimen/_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_20dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:theme="@style/textview_style"
+            android:weightSum="6">
+
+            <Com.knoventive.nutri.Util.CustomTextView_Air_Semibold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Step_3"
+                android:textSize="@dimen/_25sp" />
+
+            <Com.knoventive.nutri.Util.CustomTextView_Air_light
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:textSize="@dimen/_16sp"
+                android:text="Tap Calculate" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_margin="@dimen/step3_weightll_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/_15dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Com.knoventive.nutri.Util.CustomTextView_Air_Ult_light
+                            android:id="@+id/Weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:text="58"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/_60sp" />
+
+                        <Com.knoventive.nutri.Util.CustomTextView_img
+                            android:id="@+id/weight_img"
+                            style="@style/textview_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/Weight"
+                            android:layout_marginBottom="@dimen/_10dp"
+                            android:gravity="end"
+                            android:text="i"
+                            android:layout_marginLeft="@dimen/_5dp"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/_30sp" />
+                    </RelativeLayout>
+
+                    <Com.knoventive.nutri.Util.CustomTextView
+                        style="@style/textview_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/Weight_kg"
+                        android:textSize="@dimen/_16sp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_calorie"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Com.knoventive.nutri.Util.CustomTextView_Air_Ult_light
+                            android:id="@+id/calorie"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:text="15"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/_60sp" />
+
+                        <Com.knoventive.nutri.Util.CustomTextView_img
+                            style="@style/textview_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/calorie"
+                            android:layout_marginBottom="@dimen/_20dp"
+                            android:layout_marginLeft="@dimen/_5dp"
+                            android:gravity="end"
+                            android:text="e"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/_30sp" />
+                    </RelativeLayout>
+
+                    <Com.knoventive.nutri.Util.CustomTextView
+                        style="@style/textview_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/kcal_kg"
+                        android:textSize="@dimen/_16sp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_corner_button"
+                android:backgroundTint="@color/colorPrimary"
+                android:paddingLeft="@dimen/_50dp"
+                android:paddingRight="@dimen/_50dp"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_18sp"
+                android:textColor="@color/text_color"
+                android:text="Calculate" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.v7.widget.LinearLayoutCompat>

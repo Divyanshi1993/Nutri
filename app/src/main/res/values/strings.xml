@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Nutri</string>
+    <string name="title_activity_contact_screen">Contact_screen</string>
+    <string name="title_activity_product__information__pdf__screen">PRODUCT_INFORMATION_PDF_SCREEN
+    </string>
+    <string name="done">Calculate</string>
+    <string name="dose_cal"><b>Nutrition Calculator</b></string>
+    <string name="cal">cal</string>
+    <string name="Calorie">Calorie</string>
+    <string name="Weight">Weight</string>
+    <string name="Weight_kg">Weight(Kg)</string>
+    <string name="kcal_kg">Kcal/Kg BW/d</string>
+    <string name="nutri_regimen">Nutrition Regimen</string>
+    <string name="label_2">XX kgs | XX kcal/kg BW/d</string>
+    <string name="Knoventive_prd1">Knoventive Product</string>
+    <string name="Knoventive">Knoventive®</string>
+    <string name="product_information_selection">Product Information and \nConsumer Medicine Information</string>
+    <string name="Knoventive_el_free">Knoventive® Electrolyte Free</string>
+    <string name="product_inf_sel_label1">Product Information</string>
+    <string name="product_inf_sel_label2">Consumer Medicine Information</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="call">Call</string>
+    <string name="Step_1">Step 1</string>
+    <string name="Step_2">Step 2</string>
+    <string name="Step_3">Step 3</string>
+    <string name="Step_4">Step 4</string>
+    <string name="email">Email</string>
+    <string name="email_reg">EMAIL REGIMEN</string>
+    <string name="rec_prd">RECOMMENDED \nPRODUCT</string>
+    <string name="act_pas">  Activation Code  </string>
+    <string name="Website">Website</string>
+    <string name="Cal_instructions">Calculator Instructions</string>
+    <string name="privacy_statement">Privacy Statement</string>
+    <string name="type_patient_weight">Type the patient weight in kgs</string>
+    <string name="select_req_cal">Select the required kcal/kg BW/d</string>
+    <string name="step_4_desc_1">Review the recommended regimen</string>
+    <string name="step_4_desc_2">You may email the recommended regimen to \n yourself or the patient for later  review </string>
+    <string name="step_4_desc_3"> Please Review the Knoventive product \ninformation</string>
+    <string name="cal_incs">The Knoventive Nutrition calculator has been \ndeveloped to assist you to create nutrition \nbased on patient weight and \nnutrition requirements.
+</string>
+    <string name="amino_acid">Amino acids (g/d)</string>
+    <string name="glucose">Glucose (g/d)</string>
+    <string name="infusion">Infusion time (h)</string>
+    <string name="lipid">Lipid (g/d)</string>
+    <string name="password">knoventive</string>
+    <string name="wrong_passsword">wrong passsword</string>
+    <string name="contact_fre">Contact \n knoventive</string>
+    <string name="prd_info">Product \nInformation</string>
+    <string name="calulator_instructions">Calculator \nInstructions </string>
+    <string name="login_label2">Please use the activation password \nprovided by Knoventive</string>
+    <string name="Get_Started">Get Started</string>
+    <string name="login_label1">To obtain a password please contact \n knoventive</string>
+    <string name="tapabble_text">Tap to view \nRECOMMENDED PRODUCT</string>
+</resources>

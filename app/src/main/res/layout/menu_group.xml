@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_group"
+    android:gravity="center"
+    android:paddingRight="@dimen/menu_grp_pad_ryt"
+    android:paddingLeft="@dimen/menu_grp_pad_lft"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/cal_inf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/neg_50"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Com.knoventive.nutri.Util.CustomTextView_img
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="f"
+            android:textSize="@dimen/_30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5dp"
+            android:paddingRight="@dimen/_5dp"
+            android:text="@string/calulator_instructions" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/prd_inf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/menu_grp_mrg_top"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Com.knoventive.nutri.Util.CustomTextView_img
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="k"
+            android:textSize="@dimen/_30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/prd_info" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/contact_fres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/neg_50"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Com.knoventive.nutri.Util.CustomTextView_img
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="j"
+            android:textSize="@dimen/_30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/contact_fre" />
+    </LinearLayout>
+
+</LinearLayout>

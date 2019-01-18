@@ -1,0 +1,33 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:id="@+id/relativelayout"
+    android:elevation="3dp"
+    android:gravity="bottom"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/menu_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="bottom">
+        <include layout="@layout/menu_group"></include>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/btn_menu"
+        android:layout_width="match_parent"
+        android:background="@color/text_color"
+        android:layout_marginTop="@dimen/neg_50"
+        android:layout_height="@dimen/footer_widhth"></LinearLayout>
+    <ImageView
+        android:id="@+id/btn_menu"
+        android:layout_alignBottom="@+id/menu_group"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/_5dp"
+        android:background="@drawable/ic_menu"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="cardview_margins">220dp</dimen>
+    <dimen name="calBtnMargin">400dp</dimen>
+    <dimen name="cal_inc_card_margin">220dp</dimen>
+    <dimen name="_70dp">30dp</dimen>
+
+</resources>

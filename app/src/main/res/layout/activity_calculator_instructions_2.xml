@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/cal_inc_card_margin"
+        android:layout_marginRight="@dimen/cal_inc_card_margin"
+        app:cardCornerRadius="@dimen/_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:theme="@style/textview_style">
+
+            <Com.knoventive.nutri.Util.CustomTextView_Air_Semibold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20dp"
+                android:text="@string/Step_2"
+                android:textSize="@dimen/_25sp" />
+
+            <Com.knoventive.nutri.Util.CustomTextView_Air_light
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_16sp"
+                android:text="@string/select_req_cal" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_70dp"
+                android:layout_marginRight="@dimen/_70dp"
+                android:layout_marginTop="@dimen/step_1_margin_top"
+                android:padding="@dimen/_10dp"
+                android:layout_marginBottom="@dimen/step_1_margin_top">
+
+                <Com.knoventive.nutri.Util.CustomTextView_Air_Ult_light
+                    android:id="@+id/Calorie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center_horizontal"
+                    android:text="15"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/_90sp" />
+
+                <Com.knoventive.nutri.Util.CustomTextView_img
+                    android:id="@+id/weight_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/Calorie"
+                    android:layout_marginBottom="@dimen/_15dp"
+                    android:gravity="end"
+                    android:text="e"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_30sp" />
+
+                <Com.knoventive.nutri.Util.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Calorie"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/_18sp"
+                    android:text="@string/kcal_kg"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+
+            </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</android.support.v7.widget.LinearLayoutCompat>

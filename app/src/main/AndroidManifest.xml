@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="Com.knoventive.nutri">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.HomeScreen"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.LoginScreen"
+            android:configChanges="keyboardHidden|orientation"/>
+        <activity
+            android:name=".Activity.Contact_screen"
+            android:label="@string/title_activity_contact_screen"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".Activity.Product_info_pdf_screen"
+            android:label="@string/title_activity_product__information__pdf__screen"
+            android:theme="@style/AppTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".Activity.Product_info_selection_screen"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".Activity.RegimenScreen"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name="Com.knoventive.nutri.Activity.Calculator_instructions"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Activity.WebActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+    </application>
+
+</manifest>
